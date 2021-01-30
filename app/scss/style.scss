@@ -140,7 +140,7 @@
             position: absolute;
             background: linear-gradient(77.61deg, rgba(13, 18, 27, 1) 0%, rgba(0, 0, 0, 1) 128.26%), linear-gradient(77.61deg, rgba(50, 50, 50, 0.7) 0%, rgba(50, 50, 50, 0) 128.26%);
             filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.9));
-            height: 768px;
+            height: calc(100vh - 114px);
             top: 0;
             left: 0;
             right: 0;
@@ -151,7 +151,7 @@
     }
     &__slider-item{
         max-width: 1920px;
-        height: 768px;
+        height: calc(100vh - 114px);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -259,7 +259,7 @@
     }
 }
 .slick-slider{
-    height: 768px;
+    height: calc(100vh - 114px);
 }
 .slick-dots{
     position: absolute;
@@ -398,10 +398,10 @@
     background-size: cover;
     min-height: 2318px;
     &__inner{
-        padding-top: 120px;
+        padding-top: 134px;
     }
     &__title{
-
+        max-width: 962px;
     }
     &__subtitle{
         margin-bottom: 32px;
@@ -414,7 +414,7 @@
         margin-bottom: 50px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         &:nth-child(even){
             .project__img{
                 order: -1;
@@ -434,12 +434,17 @@
             line-height: 141px;
             text-transform: uppercase;
             @include futura;
-            color: $gold;
+            color: #F1C78E;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
         &:nth-child(n+6)::before{
             content: counter(number);
         }
+    }
+    &__item-title{
+        font-weight: 600;
+        line-height: 29px;
+        font-size: 18px;
     }
     &__img{
         max-width: 630px;
@@ -452,3 +457,115 @@
     }
 }
 // end start 
+
+// meeting start
+.meeting{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    &__inner{
+        min-height: 801px;
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr{
+        max-width: 630px;
+    }
+    &__title{
+
+    }
+    &__subtitle{
+        line-height: 34px;
+        margin-bottom: 38px;
+    }
+    .top__form{
+        color: $dark;
+        input{
+            color: $dark;
+            &::placeholder{
+                color: #828282;
+            }
+        }
+    }
+    &__form-descr{
+        margin-bottom: 40px;
+        span{
+            font-weight: 600;
+        }
+    }
+    &__info{
+        display: flex;
+    }
+    &__man{
+        max-width: 271px;
+        margin-right: 47px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/architect-bg-line.svg');
+            background-size: cover;
+            width: 770px;
+            height: 561px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-44%, -60%);
+            box-shadow: none;
+            z-index: -1;
+        }
+    }
+    &__man-img{
+        max-width: 263px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/architect-bg.svg');
+            width: 300px;
+            height: 214px;
+            bottom: 11px;
+            right: 0;
+            z-index: -1;
+        }
+        
+        img{
+            width: 100%;
+
+        }
+        
+    }
+    &__man-name{
+        font-size: 30px;
+        line-height: 51px;
+        font-weight: 600;
+    }
+    &__man-position{
+        font-weight: 600;
+        font-size: 20px;    
+        line-height: 34px;
+        color: #F1C78E;
+    }
+    &__list{
+        padding-top: 170px;
+        max-width: 247px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    &__list-item{
+        padding-left: 37px;
+        position: relative;
+        & + .meeting__list-item{
+            margin-top: 10px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/check-grey.svg');
+            width: 23px;
+            height: 22px;
+            left: 0;
+            top: 0;
+        }
+    }
+} 
+// meeting end 
