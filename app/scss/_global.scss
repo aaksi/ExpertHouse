@@ -38,6 +38,39 @@ h5,
 h6{
     margin: 0;
 }
+
+button{
+    border: none;
+}
+.btn{
+    outline: none;
+    position: relative;
+    display: inline-block;
+    padding: 21px 33px 24px 43px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(268.05deg, #FFF9C6 15.37%, #FFD8AB 99.44%);
+    cursor: pointer;
+    &::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        right: -32.5px;
+        top: 0;
+        -webkit-transform: rotate(45deg) scale(0.7071);
+        -moz-transform: rotate(45deg) scale(0.7071);
+        -ms-transform: rotate(45deg) scale(0.7071);
+        -o-transform: rotate(45deg) scale(0.7071);
+        transform: rotate(45deg) scale(0.7071);
+        background:  #FFF9C6 ;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+}
+
 // font-family: 'Montserrat', sans-serif;
-
-

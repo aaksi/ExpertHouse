@@ -37,7 +37,7 @@
         color: #fff;
         padding-left: 45px;
         position: relative;
-        max-width: 300px;
+        max-width: 270px;
         &::before{
             content: '';
             position: absolute;
@@ -126,4 +126,169 @@
         }
     }
 }
-// header end 
+// header end
+
+
+
+
+// top start 
+.top{
+    position: relative;
+    &__slider{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background: linear-gradient(77.61deg, rgba(13, 18, 27, 1) 0%, rgba(0, 0, 0, 1) 128.26%), linear-gradient(77.61deg, rgba(50, 50, 50, 0.7) 0%, rgba(50, 50, 50, 0) 128.26%);
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.9));
+            height: 768px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5;
+            z-index: 1;
+        }
+    }
+    &__slider-item{
+        max-width: 1920px;
+        height: 768px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__wrapper{
+    }
+    &__inner{
+        position: absolute;
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        z-index: 1000;
+    }
+    &__title{
+        padding-top: 100px;
+        @include futura;
+        font-size: 48px;
+        line-height: 68px;
+        text-transform: uppercase;
+        max-width: 701px;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+        span{
+            color: $gold;
+        }
+    }
+    &__form{
+        max-width: 650px;   
+        margin-bottom: 146px;
+        form{
+            font-size: 16px;
+            line-height: 29px;
+            label{
+                margin-right: 30px;
+                
+            }
+            input{
+                width: 195px;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                &::placeholder{
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+    &__form-phone{
+        border-bottom: 1px solid $gold;
+        width: 300px;
+        display: inline-block;
+        margin-right: 45px;
+        padding-bottom: 17px;
+    }
+    &__form-descr{
+        font-size: 18px;
+        color: #FAFBFC;
+        padding-left: 100px;
+        position: relative;
+        margin-bottom: 42px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/flash.png');
+            width: 77px;
+            height: 84px;
+            left: 0;
+            top: -8px;
+        }
+        span{
+            color: $gold;
+            font-weight: 700;
+        }
+    }
+    &__list{
+        font-size: 16px;
+        line-height: 26px;
+        display: flex;
+        align-items: start;
+    }
+    &__list-item{
+        display: inline-block;
+        padding-left: 56px;
+        position: relative;
+        max-width: 296px;
+        & + .top__list-item{
+            margin-left: 80px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/icons/check.svg');
+            width: 34px;
+            height: 33px;
+            left: 0;
+            top: 10px;
+            transform: translateY(-50%);
+            
+        }
+        
+    }
+}
+.slick-dots{
+    position: absolute;
+    font-size: 0;
+    right: 270px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    li{
+        border: none;
+        width: 10px;
+        height: 10px;
+        & + li{
+            margin-top: 27px;
+        }
+        &.slick-active{
+            button{
+                background-color: $gold;
+            }
+        }
+    }
+    button{
+        width: 10px;
+        height: 10px;
+        border: 1px solid $gold;
+        background-color: transparent;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+    }
+    
+}
+// top end 
