@@ -389,3 +389,66 @@
 }
 
 // advantages end 
+
+
+
+// project start 
+.project{
+    background-position: center center;
+    background-size: cover;
+    min-height: 2318px;
+    &__inner{
+        padding-top: 120px;
+    }
+    &__title{
+
+    }
+    &__subtitle{
+        margin-bottom: 32px;
+    }
+    &__items{
+        counter-reset: number;
+    }
+    &__item{
+       
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(even){
+            .project__img{
+                order: -1;
+            }
+        }
+    }
+    &__descr{
+        max-width: 600px;
+        position: relative;
+        padding-left: 62px;
+        &::before{
+            content:  counter(number);
+            position: absolute;
+            counter-increment: number;
+            left: -10px;
+            font-size: 110px;
+            line-height: 141px;
+            text-transform: uppercase;
+            @include futura;
+            color: $gold;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        &:nth-child(n+6)::before{
+            content: counter(number);
+        }
+    }
+    &__img{
+        max-width: 630px;
+        height: 334px;
+        img{
+            width: 100%;
+            filter: drop-shadow(0px 10px 24px rgba(49, 49, 55, 0.12));
+        }
+        
+    }
+}
+// end start 
