@@ -949,4 +949,110 @@
         right: 220px;
     }
 }
-// team end 
+// team end
+
+
+
+
+// guarantee start 
+.guarantee{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1102px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #FAFCFF;
+        opacity: 0.96;
+    }
+    &__wrapper{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__inner{
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        max-width: 770px;
+    }
+    &__title{
+        max-width: 770px;
+        margin-bottom: 70px;
+    }
+    &__list{
+
+    }
+    &__item{
+        padding-left: 190px;
+        margin-bottom: 40px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 136px;
+            height: 130px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        &--contract{
+            &::before{
+
+                background-image: url('../images/icons/contract.png');
+            }
+        }
+        &--lock{
+            &::before{
+
+                background-image: url('../images/icons/lock.png');
+            }
+        }
+        &--shield{
+            &::before{
+
+                background-image: url('../images/icons/shield.png');
+            }
+        }
+        &--alarm-clock{
+            &::before{
+
+                background-image: url('../images/icons/alarm-clock.png');
+            }
+        }
+    }
+    .meeting__info{
+        display: block;
+    }
+    .meeting__man{
+        margin-bottom: 30px;
+        &::before{
+            display: none;
+        }
+    }
+    .meeting__man-img{
+        &::before{
+            background-image: url('../images/icons/architect-bg2.png') ;
+            width: 410px;
+        }
+    }
+    .meeting__list{
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+}
+// guarantee end 
