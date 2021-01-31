@@ -657,3 +657,111 @@
     }
 }
 // sample end 
+
+
+
+
+// portfolio start 
+.portfolio{
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1468px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background:  linear-gradient(69.85deg, rgba(0, 0, 0, 0.93) 0%, rgba(26, 29, 35, 0.93) 100%);
+    }
+    &__wrapper{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__inner{
+        padding-top: 120px;
+        color: #fff;
+    }
+    &__title{
+        text-transform: uppercase;
+        max-width: 911px;
+        margin-bottom: 70px;
+        span{
+            color: $gold;
+        }
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 630px;
+        min-height: 467px;
+        position: relative;
+        margin-bottom: 80px;
+            &:hover{
+                .portfolio__item-wrapper{
+                    opacity: 0.3;
+                    transition: all 0.3s;
+                }
+                .portfolio__item-btn{
+                    opacity: 1;
+                    transition: all 0.3s;
+                } 
+            }
+        
+    }
+    &__item-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        transition: all 0.3s;
+    }
+    &__item-img{
+        max-width: 630px;
+        margin-left: -22px;
+        img{
+            height: 353px;
+            width: 100%;
+        }
+    }
+    &__item-btn{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        z-index: 2;
+        color: $dark;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all 0.3s;
+        &::before{
+            z-index: 1;
+        }
+    }  
+    &__item-title{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 600;
+        span{
+            color:$gold;
+        }
+    }
+    &__item-tags{
+        li{
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}
+// portfolio end
