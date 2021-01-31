@@ -765,3 +765,109 @@
     }
 }
 // portfolio end
+
+
+
+
+// facts start
+.facts{
+    background-color: #000;
+    &__inner{
+        padding-top: 120px;
+        color: #fff;
+    }
+    &__title{
+        max-width: 800px;
+        margin-bottom: 66px;
+        margin-bottom: 66px;
+        span{
+            font-size: 20px;
+            line-height: 34px;
+            display: block;
+            font-weight: 600;
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__team{
+
+    }
+    &__team-practice{
+        width: 377px;
+        font-size: 60px;
+        line-height: 77px;
+        @include futura;
+        color: $gold;
+        margin-bottom: 50px;
+        span{
+            font-size: 18px;
+            line-height: 25px;
+            color: #fff;
+            max-width: 130px;
+            display: inline-block;
+            margin-left: 25px;
+        }
+    }
+    &__btn{
+        margin-top: 50px;
+        color: $dark;
+        &::after{
+            z-index: 1;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        max-width: 720px;
+    }
+    &__item{
+        width: 331px;
+        padding-left: 80px;
+        position: relative;
+        margin-bottom: 50px;
+        &:nth-child(odd){
+            margin-right: 54px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 108px;
+            height: 104px;
+        }
+        &--cycle{
+            &::before{
+                background-image: url('../images/icons/cycle.svg');
+            }
+        }
+        &--diamond{
+            &::before{
+
+                background-image: url('../images/icons/diamond.svg');
+            }
+        }
+        &--rudder{
+            &::before{
+
+                background-image: url('../images/icons/rudder.svg');
+            }
+        }
+        &--hearts{
+            &::before{
+
+                background-image: url('../images/icons/hearts.svg');
+            }
+        }
+    }
+    &__item-title{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 600;
+    }
+}
+
+// facts end
