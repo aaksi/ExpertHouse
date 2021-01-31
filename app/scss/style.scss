@@ -1053,6 +1053,87 @@
     .meeting__list{
         padding-top: 0;
         margin-bottom: 30px;
+        max-width: 300px;
     }
 }
 // guarantee end 
+
+
+
+// report start 
+.report{
+    min-height: 854px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(69.85deg, rgba(0, 0, 0, 0.93) 0%, rgba(26, 29, 35, 0.93) 100%);
+    }
+    &__wrapper{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__inner{
+        padding-top: 120px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        max-width: 704px;
+    }
+    &__title{
+        max-width: 630px;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        max-width: 630px;
+        margin-bottom: 80px;
+    }
+    &__item{ 
+        padding-left: 82px;
+        position: relative;
+        margin-bottom: 50px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 108px;
+            height: 104px;
+            left: 0;
+            top: -10px;
+        }
+        &--report{
+            &::before{
+                background-image: url('../images/icons/report.svg');
+            }
+        }
+        &--builder{
+            &::before{
+                background-image: url('../images/icons/builder.svg');
+            }
+        }
+    }
+    &__item-title{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 600;
+    }
+    &__img{
+        max-width: 516px;
+        img{
+            width: 100%;
+        }
+    }
+}
+// report end 
