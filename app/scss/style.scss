@@ -257,9 +257,9 @@
         }
         
     }
-}
-.slick-slider{
-    height: calc(100vh - 114px);
+    .slick-slider{
+        height: calc(100vh - 114px);
+    }
 }
 .slick-dots{
     position: absolute;
@@ -871,3 +871,82 @@
 }
 
 // facts end
+
+
+// team start 
+.team{
+    min-height: 622px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(69.85deg, rgba(0, 0, 0, 0.93) 0%, rgba(26, 29, 35, 0.93) 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    }
+    &__wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__inner{
+        padding-top: 120px;
+        color: #fff;
+
+    }
+    &__title{
+        margin-bottom: 80px;
+    }
+    &__card{
+        max-width: 300px;
+        margin-left: 10px;
+    }
+    &__card-name{
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &__card-position{
+        margin-bottom: 5px;
+        color: $gold;
+    }
+    &__slider{
+        position: relative;
+    }
+}
+.slick-arrow{
+    
+}
+.slider__btn{
+    position: absolute;
+    background: url('../images/icons/arrow-right.svg');
+    width: 80px;
+    height: 22px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: -100px;
+    cursor: pointer;
+    outline: none;
+    button{
+        border: none;
+
+    }
+    &--right{
+        right: 0;
+    }
+    &--left{
+        transform: rotate(180deg);
+        right: 220px;
+    }
+}
+// team end 
