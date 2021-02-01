@@ -1295,3 +1295,104 @@
     }
 }
 // concept end 
+
+
+
+
+// footer start 
+.footer{
+    background-color: #0C0C0C;
+    &__inner {
+        padding-top: 120px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__logo{
+        margin-bottom: 58px;
+    }
+    
+    &__social{
+        width: 200px;
+    }
+    &__social-title{
+        margin-bottom: 20px;
+    }
+    &__social-item{
+        width: 30px;
+        height: 30px;
+        display: inline-block; 
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+        &--fb{
+            background-image: url('../images/icons/facebook.svg');
+        }     
+        &--inst{
+            background-image: url('../images/icons/inst.svg');
+        }     
+    }
+    &__contact{
+        max-width: 300px;
+    }
+    &__contact-item{
+        padding-left: 30px;
+        position: relative;
+        margin-bottom: 20px;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            background-size: cover;
+        }
+        &--marker{
+            span{
+                display: block;
+                font-weight: 600;
+            }
+            &::before{
+                background-image: url('../images/icons/map-marker.svg');
+                height: 20px;
+                width: 15px;
+            }
+        }
+        &--phone{
+            &::before{
+                background-image: url('../images/icons/phone.svg');
+                height: 21px;
+                width: 12px;
+            }
+        }
+        &--email{
+            &::before{
+                background-image: url('../images/icons/arrow-mail.svg');
+                height: 18px;
+                width: 13px;
+            }
+        }
+    }
+    &__menu-link{
+        margin-bottom: 3px;
+    }
+    &__copy{
+        padding: 30px 0;
+        background-color: $dark;
+    }
+    &__copy-box{
+        display: flex;
+        justify-content: space-between;
+        p{
+            color: #FFFFFF;
+            opacity: 0.5;
+            display: inline-block;
+            a{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}  
+// footer end
