@@ -318,7 +318,7 @@
     &__wrapper{
         z-index: 1000;
         color: #fff;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
@@ -590,7 +590,7 @@
         bottom: 0;
     }
     &__wrapper{
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
         left: 0;
@@ -678,7 +678,7 @@
         background:  linear-gradient(69.85deg, rgba(0, 0, 0, 0.93) 0%, rgba(26, 29, 35, 0.93) 100%);
     }
     &__wrapper{
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
         bottom: 0;
@@ -891,7 +891,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
     }
     &__wrapper{
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
@@ -972,7 +972,7 @@
         opacity: 0.96;
     }
     &__wrapper{
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
         bottom: 0;
@@ -1077,14 +1077,14 @@
         background: linear-gradient(69.85deg, rgba(0, 0, 0, 0.93) 0%, rgba(26, 29, 35, 0.93) 100%);
     }
     &__wrapper{
-        position: absolute;
+        position: relative;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         z-index: 1;
     }
-    &__inner{
+    &__inner{  
         padding-top: 120px;
         color: #fff;
         display: flex;
@@ -1137,3 +1137,161 @@
     }
 }
 // report end 
+
+
+
+
+// reviews start 
+.reviews{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0.96;
+        background: #FAFCFF;
+    }
+    &__wrapper{
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__inner{
+        padding-top: 120px;
+    }
+    &__top{
+        display: flex;
+        padding-right: 28px;
+    }
+    &__top-text{
+       display: inline-block;
+       max-width: 740px;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__btn{
+        margin-top: 20px;
+        margin-left: auto;
+        height: 65px;
+
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        padding-bottom: 60px;
+    }
+    &__item{
+        padding: 40px 110px 43px 50px;
+        position: relative;
+        background-image: url('../images/icons/reviews-box.svg');
+        background-position: center right;
+        background-size: cover;
+        box-shadow: none;
+        // border: 1px solid $dark;
+        margin-left: -30px;
+        &--big{
+            flex-basis: 100% ;
+            margin-bottom: 100px;
+            margin-left: 30px;
+        }
+        &--small{
+            flex-basis: calc(50% - 30px);
+            margin-left: 30px;
+        }
+
+    }
+    &__item-name{
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        font-size: 18px;
+        line-height: 29px;
+        font-weight: 600;
+    }
+}
+// reviews end
+
+
+
+// concept start
+.concept {
+    background-color: #fff;
+    position: relative;
+        overflow: hidden;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url('../images/concept-house.png');
+            width: 897px;
+            height: 494px;
+            top: 60px;
+            right: -250px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    &__inner{
+        padding-top: 120px;
+        max-width: 960px;
+        color: $dark;
+        
+    }
+    &__title{
+        margin-bottom: 58px;
+
+    }
+    .top__form{
+        max-width: 960px;
+        form{
+            input{
+                color: #000;
+                &::placeholder{
+                    color: #B9B9B9;
+                }
+            }
+        }
+    }
+    .top__form-descr{
+        color: $dark;
+        span{
+            display: block;
+            font-size: 20px;
+            line-height: 34px;
+            font-weight: 600;
+            color: $dark;
+        }
+    }
+    .form__name{
+        border-bottom: 1px solid #FFF9C6;
+        width: 300px;
+        display: inline-block;
+        margin-right: 20px;
+        padding-bottom: 17px;
+        &::placeholder{
+            color: #B9B9B9;
+        }
+    }
+    .top__form-phone{
+        &::placeholder{
+            color: #B9B9B9;
+        }
+    }
+    .btn{
+        z-index: 2;
+        &::after{
+            z-index: 1;
+
+        }
+    }
+}
+// concept end 
