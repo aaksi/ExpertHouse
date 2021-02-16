@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpertHouse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <picture>
+                        <source srcset="images/logo-mobile.png" media="(max-width:650px)">
+                        <img src="images/logo.png" alt="логотип ExpertHouse">
+                    </picture>
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item menu__list-item--dropdown">
+                            <a href="#" class="menu__list-link">О нас</a>
+                            <ul class="menu__dropdown">
+                                <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Статьи</a></li>
+                                <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">FAQ</a></li>
+                                <li class="menu__dropdown-item"><a href="#" class="menu__dropdown-link">Отзывы</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Проектирование</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Строительство</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Портфолио</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Цены</a></li>
+                        <li class="menu__list-item"><a href="#" class="menu__list-link">Контакты</a></li>
+                    </ul>
+                    <p class="header__meeting">7 лет проектируем и строим дома в Москве и МО, Санкт-Петербурге и ЛО. <a href="#"> Встреча с архитектором</a> — бесплатно!</p>
+                    <div class="header__phones">
+                        <a href="#" class="header__phone">+7 (123) 456-78-90 <span> Москва</span></a>
+                        <a href="#" class="header__phone">+7 (123) 456-78-90 <span> СПБ</span></a>
+                    </div>
+                    <a href="#" class="menu__btn btn">Записаться на встречу</a>
+                </nav>
+                <div class="header__phones">
+                    <a href="#" class="header__phone">+7 (123) 456-78-90 <span> Москва</span></a>
+                    <a href="#" class="header__phone">+7 (123) 456-78-90 <span> СПБ</span></a>
+                </div>
+                <div class="burger__btn">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="top">
+        <div class="top__wrapper">
+        <div class="top__slider">
+            <div class="top__slider-item" style="background-image: url('images/top__slider/house1.jpg');"></div>
+            <div class="top__slider-item" style="background-image: url('images/top__slider/house2.jpg');"></div>
+            <div class="top__slider-item" style="background-image: url('images/top__slider/house3.jpg');"></div>
+            <div class="top__slider-item" style="background-image: url('images/top__slider/house4.jpg');"></div>
+            <div class="top__slider-item" style="background-image: url('images/top__slider/house5.jpg');"></div>
+        </div>
+           
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">Разработка <span>уникального</span> проекта для вашего дома или коттеджа под ключ </h1>
+                    <div class="top__form">
+                        <div class="top__form-descr">
+                            Прямо сейчас запишитесь на встречу с архитектором 
+                            и получите <span>бесплатный концепт</span> вашего будущего дома:
+                        </div>
+                        <form action="#">
+                            <div class="top__form-phone">
+                                <label for="">Телефон</label>
+                                <input id="phone" type="text" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                            </div>
+                            <button class="btn">Записаться на встречу</button>
+                        </form>
+                    </div>
+                    <ul class="top__list">
+                        <li class="top__list-item">Соответствие ГОСТам</li>
+                        <li class="top__list-item">Соответствие строительным нормам и правилам</li>
+                        <li class="top__list-item">По вашим пожеланиям</li>
+                        <li class="top__list-item">Проектируем любые типы зданий</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages" style="background-image: url('images/advantages-bg.jpg');">
+       <div class="advantages__wrapper">
+            <div class="container">
+                <div class="advantages__inner">
+                    <h3 class="advantages__title title">Не чертёж на коленке, а детальная проработка проекта вашего дома</h3>
+                    <p class="advantages__subtitle subtitle">При создании проекта мы учитываем 5 важных факторов:</p>
+                    <div class="advantages__items">
+                        <div class="advantages__item advantages__item--clock">
+                            <h4 class="advantages__item-title">Ваш ритм жизни и интересы</h4>
+                            <p class="advantages__item-text">Учитываем особенность вашей семьи, численность, возраст будущих жителей, ваш образ жизни и хобби, чтобы в вашем доме было всё, что вам необходимо: мастерская / игровая зона / место для хранения спортивных снарядов / безопасные лестницы и т.д. </p>
+                        </div>
+                        <div class="advantages__item advantages__item--globe">
+                            <h4 class="advantages__item-title">Геологию участка</h4>
+                            <p class="advantages__item-text">Обследуем грунт вашего участка, его плотность, несущую способность, чтобы подобрать соответствующие материалы для строительства. Именно это поможет избежать финансовых издержек при строительстве и построить надёжный дом, который будет стоять крепко долгие годы, не просядет и не деформируется.  </p>
+                        </div>
+                        <div class="advantages__item advantages__item--marker">
+                            <h4 class="advantages__item-title">Расположение дома на участке </h4>
+                            <p class="advantages__item-text">На вашем участке мы определяем, где лучше всего построить дом и каким образом, чтобы получить красивые виды из окон и хорошее распределение солнечного света. 
+                            </p>
+                        </div>
+                        <div class="advantages__item advantages__item--house">
+                            <h4 class="advantages__item-title">Способ проживания в этом доме</h4>
+                            <p class="advantages__item-text">Будете ли вы жить в доме круглый год или это будет дача на лето? От выбора сезонности зависит технология конструкции.
+                            </p>
+                        </div>
+                        <div class="advantages__item advantages__item--design">
+                            <h4 class="advantages__item-title">Предпочтения в дизайне </h4>
+                            <p class="advantages__item-text">Узнаём, какой стиль интерьера и экстерьера вам нравится, и после этого создаём подборку эталонных видов. Вы получаете максимально подробный и понятный дизайн вплоть до расположения тапочек в душевой кабине.
+                            </p>
+                        </div>
+                            <a href="#" class="advantages__btn btn">Записаться на встречу</a>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="project" style="background-image: url('images/project-bg.jpg');">
+        <div class="container">
+            <div class="project__inner">
+                <h3 class="project__title title">Над вашим проектом работает 5 узкоспециализированных специалистов</h3>
+                <p class="project__subtitle subtitle">Работа над проектом идёт в 5 этапов</p>
+                <ol class="project__items">
+                  <li class="project__item">
+                      <div class="project__descr">
+                          <h5 class="project__item-title">Разработка концепта</h5>
+                          <p class="project__item-text">Выезжаем на участок, оцениваем положение участка относительно сторон света. Планируем положение дома. Собираем ваши пожелания относительно стиля дома, внутреннего устройства, ваших хобби и интересов. После этого формируем концепт дома. </p>
+                          <a href="#" class="project__item-link">Ответственный: Архитектор</a>
+                      </div>
+                      <div class="project__img">
+                          <img src="images/project/item1.png" alt="Архитектор">
+                      </div>
+                  </li>
+                  <li class="project__item">
+                      <div class="project__descr">
+                          <h5 class="project__item-title">Архитектурное проектирование</h5>
+                          <p class="project__item-text">Определяем, каким будет объект. Вы получаете общий образ сооружения, планировочные решения, изображения здания в разрезе, макеты, 3Д-эскизы, фотоколлажи, аксонометрические модели и краткие резюме с описанием отдельных составляющих и общего облика сооружения.</p>
+                          <a href="#" class="project__item-link">Ответственный: Архитектор</a>
+                      </div>
+                      <div class="project__img">
+                          <img src="images/project/item2.png" alt="Спроэктированный дом">
+                      </div>
+                  </li>
+                  <li class="project__item">
+                      <div class="project__descr">
+                          <h5 class="project__item-title">Строительное проектирование</h5>
+                          <p class="project__item-text">Проводим экспертизу грунтов на участке. Исходя из анализа, формируется конструкторский проект, в котором становится ясно, где именно будет возведен объект, из каких конструктивных элементов должен выполняться заказ, какой материал нужен для этого дома, какая технология постройки дома эффективна.
+                        </p>
+                          <a href="#" class="project__item-link">Ответственный: Архитектор</a>
+                      </div>
+                      <div class="project__img">
+                          <img src="images/project/item3.png" alt="проэкт дома">
+                      </div>
+                  </li>
+                  <li class="project__item">
+                      <div class="project__descr">
+                          <h5 class="project__item-title">Инженерный проект</h5>
+                          <p class="project__item-text">Проектируем освещение, отопление, электроснабжение, тепловые сети, кондиционирование, системы жизнеобеспечения и системы «умного дома»
+                        </p>
+                          <a href="#" class="project__item-link">Ответственный: Инженер</a>
+                      </div>
+                      <div class="project__img">
+                          <img src="images/project/item4.png" alt="проэкт дома">
+                      </div>
+                  </li>
+                  <li class="project__item">
+                      <div class="project__descr">
+                          <h5 class="project__item-title">Строительное проектирование</h5>
+                          <p class="project__item-text">Рассчитываем затраты на проект исходя из расходов: на работы, стройматериалы, хозяйственные нужды, приобретение комплектующих и прочее.
+                            Это послужит вам ориентиром для закупок и позволит не потратить лишнего на строительство.
+                            </p>
+                          <a href="#" class="project__item-link">Ответственный: Сметчик</a>
+                      </div>
+                      <div class="project__img">
+                          <img src="images/project/item5.png" alt="расчёт стоймости">
+                      </div>
+                  </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="meeting">
+        <div class="container">
+            <div class="meeting__inner">
+               <div class="meeting__descr">
+                    <h3 class="meeting__title title">Запишитесь на бесплатную встречу с архитектором</h3>
+                    <p class="meeting__subtitle subtitle">Главный архитектор принимает участие во всех строительных процессах компании. Будет вести проектирование и строительство вашего дома от разработки концепта до сдачи проекта.</p>
+                    <div class="top__form">
+                        <div class="meeting__form-descr">
+                            <span>Заполните форму</span> — мы перезвоним вам и договоримся о встрече с главным архитектором, на которой он поможет разработать концепт вашего будущего дома
+                        </div>
+                        <form action="#">
+                            <div class="top__form-phone">
+                                <label for="">Телефон</label>
+                                <input id="phone2" type="text" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                            </div>
+                            <button class="btn">Записаться на встречу</button>
+                        </form>
+                    </div>
+               </div>
+               <div class="meeting__info">
+                   <div class="meeting__man">
+                       <div class="meeting__man-img">
+                           <img src="images/architect.png" alt="Фото архитектора">
+                       </div>
+                       <div class="meeting__man-name">Егор Гвоздяный</div>
+                       <div class="meeting__man-position">главный архитектор</div>
+                   </div>
+                   <ul class="meeting__list">
+                       <li class="meeting__list-item">Член международной организации союза дизайнеров</li>
+                       <li class="meeting__list-item">С 2011 года занимается проектированием</li>
+                       <li class="meeting__list-item">Спроектировал > 500 домов и коттеджей</li>
+                       <li class="meeting__list-item">Окончил архитектурный университет и художественную академию</li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sample" style="background-image: url('images/sample-bg.jpg');">
+       <div class="sample__wrapper">
+            <div class="container">
+                <div class="sample__inner">
+                    <h3 class="sample__title title">Примеры наших проектов</h3>
+                    <div class="sample__items">
+                        <div class="sample__item">
+                            <div class="sample__item-img">
+                                <img src="images/top__slider/house4.jpg" alt="Спроэктированный дом">
+                            </div>
+                            <h5 class="sample__item-title">Архитектурный проект + 3D визуализация</h5>
+                            <a href="" class="sample__item-link">Пример</a>
+                        </div>
+                        <div class="sample__item">
+                            <div class="sample__item-img">
+                                <img src="images/top__slider/house3.jpg" alt="Спроэктированный дом">
+                            </div>
+                            <h5 class="sample__item-title">Архитектурный проект + 3D визуализация</h5>
+                            <a href="" class="sample__item-link">Пример</a>
+                        </div>
+                        <div class="sample__item">
+                            <div class="sample__item-img">
+                                <img src="images/top__slider/house2.jpg" alt="Спроэктированный дом">
+                            </div>
+                            <h5 class="sample__item-title">Архитектурный проект + 3D визуализация</h5>
+                            <a href="" class="sample__item-link">Пример</a>
+                        </div>
+                        <div class="sample__item">
+                            <div class="sample__item-img">
+                                <img src="images/top__slider/house1.jpg" alt="Спроэктированный дом">
+                            </div>
+                            <h5 class="sample__item-title">Архитектурный проект + 3D визуализация</h5>
+                            <a href="" class="sample__item-link">Пример</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="portfolio" style="background-image: url('images/portfolio-bg.jpg');">
+        <div class="portfolio__wrapper">
+            <div class="container">
+                <div class="portfolio__inner">
+                    <h3 class="portfolio__title title">
+                        За <span>7 лет</span> спроектировали и построили <span>более 500</span> домов и коттеджей
+                    </h3>
+                    <div class="portfolio__items">
+                        <div class="portfolio__item">
+                         <div class="portfolio__item-wrapper">
+                                <div class="portfolio__item-img">
+                                    <img src="images/portfolio/item1.png" alt="Спроэктированный дом">
+                                </div>
+                                <div class="portfolio__item-title">Проект дома в английском стиле <span>330 м.кв.</span></div>
+                                <ul class="portfolio__item-tags">
+                                    <li><span>#</span></li>
+                                    <li><a href="#" class="portfolio__item-link">Дома в классическом стиле, </a></li>
+                                    <li><a href="#" class="portfolio__item-link"> Дома и коттеджи,</a></li>
+                                    <li><a href="#" class="portfolio__item-link">Камень</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="portfolio__item-btn btn">Смотреть все работы</a>
+                        </div>
+                        <div class="portfolio__item">
+                         <div class="portfolio__item-wrapper">
+                                <div class="portfolio__item-img">
+                                    <img src="images/portfolio/item2.png" alt="Спроэктированный дом">
+                                </div>
+                                <div class="portfolio__item-title">Одноэтажный дом из газобетона  <span>168 м.кв.</span></div>
+                                <ul class="portfolio__item-tags">
+                                    <li><span>#</span></li>
+                                    <li><a href="#" class="portfolio__item-link">Дома в классическом стиле, </a></li>
+                                    <li><a href="#" class="portfolio__item-link"> Дома и коттеджи,</a></li>
+                                    <li><a href="#" class="portfolio__item-link">Камень</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="portfolio__item-btn btn">Смотреть все работы</a>
+                        </div>
+                        <div class="portfolio__item">
+                         <div class="portfolio__item-wrapper">
+                                <div class="portfolio__item-img">
+                                    <img src="images/portfolio/item3.png" alt="Спроэктированный дом">
+                                </div>
+                                <div class="portfolio__item-title">Одноэтажный дом с плоской крышей  <span>128 м.кв.</span></div>
+                                <ul class="portfolio__item-tags">
+                                    <li><span>#</span></li>
+                                    <li><a href="#" class="portfolio__item-link">Дома в классическом стиле, </a></li>
+                                    <li><a href="#" class="portfolio__item-link"> Дома и коттеджи,</a></li>
+                                    <li><a href="#" class="portfolio__item-link">Камень</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="portfolio__item-btn btn">Смотреть все работы</a>
+                        </div>
+                        <div class="portfolio__item">
+                         <div class="portfolio__item-wrapper">
+                                <div class="portfolio__item-img">
+                                    <img src="images/portfolio/item4.png" alt="Спроэктированный дом">
+                                </div>
+                                <div class="portfolio__item-title">Одноэтажный дом с плоской крышей  <span>128 м.кв.</span></div>
+                                <ul class="portfolio__item-tags">
+                                    <li><span>#</span></li>
+                                    <li><a href="#" class="portfolio__item-link">Дома в классическом стиле, </a></li>
+                                    <li><a href="#" class="portfolio__item-link"> Дома и коттеджи,</a></li>
+                                    <li><a href="#" class="portfolio__item-link">Камень</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="portfolio__item-btn btn">Смотреть все работы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facts">
+        <div class="container">
+            <div class="facts__inner">
+                <h3 class="facts__title title">6 фактов о компании Expert House, <span>которые вам нужно знать</span></h3>
+                <div class="facts__box">
+                    <div class="facts__team">
+                        <div class="facts__team-practice">> 10 лет <span>опыт работы сотрудников</span></div>
+                        <div class="facts__team-practice">15<span>человек в команде</span></div>
+                        <a href="#" class="facts__btn btn">Записаться на встречу</a>
+                    </div>
+                    <ul class="facts__list">
+                        <li class="facts__item facts__item--cycle">
+                            <h5 class="facts__item-title">Берём на себя полный цикл работ</h5>
+                            <p class="facts__item-descr">Выезжаем на участок, проводим экспертизу, проектируем, строим</p>
+                        </li>
+                        <li class="facts__item facts__item--diamond">
+                            <h5 class="facts__item-title">Работаем  без посредников</h5>
+                            <p class="facts__item-descr">Поэтому вы   не переплачиваете</p>
+                        </li>
+                        <li class="facts__item facts__item--rudder">
+                            <h5 class="facts__item-title">Бесплатный выезд на участок</h5>
+                            <p class="facts__item-descr">в удобное для вас время</p>
+                        </li>
+                        <li class="facts__item facts__item--hearts">
+                            <h5 class="facts__item-title">Нет ограничений</h5>
+                            <p class="facts__item-descr">Проектируем и строим дом, на 100% соответствующий вашим желаниям</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" style="background-image: url('images/team-bg.jpg');">
+        <div class="team__wrapper">
+            <div class="container">
+                <div class="team__inner">
+                    <div class="team__title title">Часть нашей команды</div>
+                    <div class="team__slider">
+                        <div class="team__card">
+                            <div class="team__card-name">Рамон Лаурейро-Гарсия</div>
+                            <div class="team__card-position">Креативный архитектор концептуалист</div>
+                            <div class="team__card-descr">с богатым опытом проектирования частных резиденций, спроектировал 20 проектов </div>
+                        </div>
+                        <div class="team__card">
+                            <div class="team__card-name">Сергей Лазарев</div>
+                            <div class="team__card-position">Инженер-архитектор</div>
+                            <div class="team__card-descr">со стажем > 10 лет. Проектирует деревянные и каменные конструкций, делает сметные расчёты, участвует в каждом проекте компании</div>
+                        </div>
+                        <div class="team__card">
+                            <div class="team__card-name">Егор Гвоздяный</div>
+                            <div class="team__card-position">Главный архитектор</div>
+                            <div class="team__card-descr">компании со стажем > 9 лет </div>
+                        </div>
+                        <div class="team__card">
+                            <div class="team__card-name">Михаил Федяев</div>
+                            <div class="team__card-position">Представитель компании в Спб,</div>
+                            <div class="team__card-descr">директор по снабжению и коммуникаций с бригадами и поставщиками материалов.</div>
+                        </div>
+                        <div class="team__card">
+                            <div class="team__card-name">Семен Гвоздяный</div>
+                            <div class="team__card-position">Кадастровый инженер, геолог</div>
+                            <div class="team__card-descr">Организует геодезические и геологические изыскания участка.</div>
+                        </div>
+                        <div class="team__card">
+                            <div class="team__card-name">Рамон Лаурейро-Гарсия</div>
+                            <div class="team__card-position">Креативный архитектор концептуалист</div>
+                            <div class="team__card-descr">с богатым опытом проектирования частных резиденций, спроектировал 20 проектов </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee" style="background-image: url('images/guarantee-bg.jpg');">
+        <div class="guarantee__wrapper">
+            <div class="container">
+                <div class="guarantee__inner">
+                    <div class="guarantee__text">
+                        <h3 class="guarantee__title title">Даём гарантию защиты качества, сроков и лучшей стоимости</h3>
+                        <ul class="guarantee__list">
+                            <li class="guarantee__item guarantee__item--contract">
+                                <h5 class="guarantee__item-title">Оформляем договор</h5>
+                                <p class="guarantee__item-descr">Несём ответственность за ваш дом перед законом РФ, поэтому сразу делаем качественно.</p>
+                            </li>
+                            <li class="guarantee__item guarantee__item--lock">
+                                <h5 class="guarantee__item-title">Никаких скрытых платежей</h5>
+                                <p class="guarantee__item-descr">Стоимость работ зафиксирована в договоре, и мы ни при каких условиях не имеем права изменить её в процессе работ.
+                                </p>
+                            </li>
+                            <li class="guarantee__item guarantee__item--shield">
+                                <h5 class="guarantee__item-title">Берём все риски и проблемы на себя</h5>
+                                <p class="guarantee__item-descr">При строительстве дома возникают разные казусы. Поставщики поставляют некачественный материал, срывают сроки поставки или банкротятся. Все эти риски мы берём на себя и решаем проблемы 
+                                за свой счёт.</p>
+                            </li>
+                            <li class="guarantee__item guarantee__item--alarm-clock">
+                                <h5 class="guarantee__item-title">Сдача работы точно в срок</h5>
+                                <p class="guarantee__item-descr">Насчитываем пени в случае несоблюдения сроков, прописанных в договоре.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="meeting__info">
+                        <div class="meeting__man">
+                            <div class="meeting__man-img">
+                                <img src="images/architect.png" alt="фото архитектора">
+                            </div>
+                            <div class="meeting__man-name">Егор Гвоздяный</div>
+                            <div class="meeting__man-position">главный архитектор</div>
+                        </div>
+                        <ul class="meeting__list">
+                            <li class="meeting__list-item">Член международной организации союза дизайнеров</li>
+                            <li class="meeting__list-item">С 2011 года занимается проектированием</li>
+                            <li class="meeting__list-item">Спроектировал > 500 домов и коттеджей</li>
+                            <li class="meeting__list-item">Окончил архитектурный университет и художественную академию</li>
+                        </ul>
+                        <a href="" class="guarantee__btn btn">Записаться на встречу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="report" style="background-image: url('images/report-bg.jpg');">
+        <div class="report__wrapper">
+            <div class="container">
+                <div class="report__inner">
+                    <div class="report__text">
+                        <h3 class="report__title title">Открытый процесс работы. Вы всегда в курсе.</h3>
+                        <p class="report__subtitle">Для каждого проекта мы создаём чат в WhatsApp, где участвуют все ведущие специалисты — архитектор, инженер, конструктор, дизайнер.</p>
+                        <div class="report__item report__item--report">
+                            <h5 class="report__item-title">Регулярные отчёты</h5>
+                            <p class="report__item-descr">Отправляем фотографии, макеты, расчёты и всю новую и необходимую информацию в чат, чтобы вы могли отслеживать процесс работы</p>
+                        </div>
+                        <div class="report__item report__item--builder">
+                            <h5 class="report__item-title">Регулярные отчёты</h5>
+                            <p class="report__item-descr">Отправляем фотографии, макеты, расчёты и всю новую и необходимую информацию в чат, чтобы вы могли отслеживать процесс работы</p>
+                        </div>
+                    </div>
+                    <div class="report__img">
+                        <img src="images/report-phone.png" alt="телефон с перепиской">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" style="background-image: url('images/top__slider/house1.jpg');">
+        <div class="reviews__wrapper">
+            <div class="container">
+                <div class="reviews__inner">
+                    <div class="reviews__top">
+                        <div class="reviews__top-text">
+                            <h3 class="reviews__title title">«У строителей от документации — сплошной восторг!..»</h3>
+                            <p class="reviews__subtitle subtitle">Реальные отзывы наших клиентов</p>
+                        </div>
+                        <a href="#" class="reviews__btn btn">Записаться на встречу</a>
+                    </div>
+                    <div class="reviews__items">
+                        <div class="reviews__item reviews__item--big">
+                            <p class="reviews__item-text">
+                                Благодарим за хорошую реализацию наших замыслов по проектированию и строительству дома в Одинцово. Очень понравилось работать с Анастасией по дизайну, а также с Егором по проекту. Строительные работы проведены в соответствии с проектом. Бригада из Нижнего Новгорода. Контроль со стороны прораба хороший. Мы же в свою очередь наняли свой тех.надзор, который подтвердил качество работ. Единственное по срокам — хотелось бы побыстрее.
+                            </p>   
+                            <div class="reviews__item-name">Валерий и Татьяна</div>
+                        </div>
+                        <div class="reviews__item reviews__item--small">
+                            <p class="reviews__item-text">
+                                Понравилось работать с компанией. Хоть проект делали долго, но оно того стоило. Многие вещи открыла для себя впервые.  Дом построили, у строителей при работе с документацией – сплошной восторг. От сметы не отклонились. В нашем доме уютно и тепло. Благодарим!
+                            </p>   
+                            <div class="reviews__item-name">Наталия Ивановна</div>
+                        </div>
+                        <div class="reviews__item reviews__item--small">
+                            <p class="reviews__item-text">
+                                Работы выполнены в соответствии с договором, нареканий нет. Дом получился необычным, но очень удобным.  Рекомендую друзьям!
+                            </p>   
+                            <div class="reviews__item-name">Мальцев Вячеслав</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="concept">
+        <div class="container">
+            <div class="concept__inner">
+                <div class="concept__title title">Получите бесплатно концепт вашего дома</div>
+                <div class="top__form">
+                    <div class="top__form-descr">
+                        <span>Запишитесь на бесплатную встречу с архитектором,</span>  на которой он разберёт ваш участок, ваши пожелания дома и подготовит концепт для будущего проекта.
+
+                    </div>
+                    <form action="#">
+                        <div class="form__name">
+                            <label for="name">Имя</label>
+                            <input id="name" type="text" placeholder="Иван Петров" required>
+                        </div>
+                        <div class="top__form-phone">
+                            
+                            <label for="phone">Телефон</label>
+                            <input id="phone3" type="text" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                        </div>
+                        <button class="btn">Записаться на встречу</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__link">
+                    <a href="#" class="footer__logo">
+                        <img src="images/logo.png" alt="логотип ExpertHouse">
+                    </a>
+                    <div class="footer__social">
+                        <div class="footer__social-title">Мы в социальных сетях:</div>
+                        <a href="#" class="footer__social-item footer__social-item--fb"></a>
+                        <a href="#" class="footer__social-item footer__social-item--inst"></a>
+                    </div>
+                </div>
+                <ul class="footer__contact">
+                    <li class="footer__contact-item footer__contact-item--marker"><span>Санкт-Петербург</span>Тихорецкий проспект, 17Б
+                        Метро Политехническая</li>
+                    <li class="footer__contact-item footer__contact-item--phone"><a href="#">+7 (123) 456-78-90</a></li>
+                    <li class="footer__contact-item footer__contact-item--email"><a href="#">info@info.info</a></li>
+                </ul>
+                <ul class="footer__contact">
+                    <li class="footer__contact-item footer__contact-item--marker"><span>Москва</span>Большой Кисельный пер., д.5Метро Трубная, Кузнецкий Мост</li>
+                    <li class="footer__contact-item footer__contact-item--phone"><a href="#">+7 (123) 456-78-90</a></li>
+                    <li class="footer__contact-item footer__contact-item--email"><a href="#">info@info.info</a></li>
+                </ul>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li><a href="#" class="footer__menu-link">О нас</a></li>
+                        <li><a href="#" class="footer__menu-link">Услуги</a></li>
+                        <li><a href="#" class="footer__menu-link">Портфолио</a></li>
+                        <li><a href="#" class="footer__menu-link">Цены</a></li>
+                        <li><a href="#" class="footer__menu-link">FAQ</a></li>
+                        <li><a href="#" class="footer__menu-link">Отзывы </a></li>
+                        <li><a href="#" class="footer__menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="footer__copy-box">
+                    <p>АРХИТЕКТУРНОЕ БЮРО ООО «ЭКСПЕРТ ХАУС» © 2013 - 2020г.</p>
+                    <p>Designed by <a href="#">Anna Kavunova</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
